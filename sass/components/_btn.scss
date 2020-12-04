@@ -1,0 +1,26 @@
+button {
+    border: none;
+    background: $bgbtn;
+    font-family: $poppins, Medium;
+    color: $colorwhite;
+    @include text-transform();
+    cursor: pointer;
+
+}
+
+.buttonprice {
+    @extend button;
+    border: solid 1px $colorprice;
+    background: white;
+    font-weight: $fontw500;
+    font-size: $ftsize16;
+    color: $colortitre2;
+    padding: 14px 41px;
+    border-radius: $borderradus25;
+
+    &--blue {
+        @extend .buttonprice;
+        background: $bgbtn;
+        color: $colorwhite;
+    }
+}

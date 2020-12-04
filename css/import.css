@@ -1,0 +1,490 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+h1 {
+  font-family: "Poppins";
+  font-size: 50px;
+  font-weight: normal;
+  color: #707070;
+  line-height: 1.6;
+  letter-spacing: normal;
+  margin-top: 150px;
+  text-transform: uppercase; }
+
+h2, .hero-banner h2, main .weare h2, article .space h2, .flex .fiche h2 {
+  font-family: "Poppins";
+  color: #42495B;
+  text-transform: uppercase; }
+
+.textegris {
+  color: #7A839E;
+  font-size: 16px;
+  font-family: "Poppins";
+  font-weight: 300; }
+
+.textelato {
+  color: #7A839E;
+  font-family: "Lato";
+  font-weight: normal;
+  font-size: 15px; }
+
+.texteviolet, .card .bg-img .center .texteviolet, .news div:first-child .texteviolet {
+  color: #7f76f9;
+  font-weight: normal; }
+
+.textefooter, .textefooter--small {
+  color: white;
+  font-weight: 300;
+  font-family: "Poppins";
+  font-size: 50px; }
+  .textefooter--small {
+    font-size: 31px;
+    font-weight: 500; }
+
+.titre2 {
+  color: #42495B;
+  font-size: 28px;
+  font-weight: normal;
+  line-height: 1.32;
+  letter-spacing: normal;
+  text-align: center;
+  font-family: "Poppins"; }
+
+.titlefooter, footer nav ul li {
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5; }
+
+.price {
+  font-family: "Poppins";
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.53;
+  text-align: center;
+  color: #1000ff;
+  margin-top: 36px;
+  margin-bottom: 40px; }
+
+h3, .news div:first-child span {
+  font-family: "Poppins";
+  font-size: 32px;
+  line-height: 1.5;
+  text-align: center;
+  color: #42495B;
+  font-weight: normal; }
+
+@media (max-width: 900px) {
+  h1 {
+    margin-top: 10px; } }
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 38px; } }
+
+header {
+  background-image: url(../../img/wave.svg);
+  height: 770px;
+  background-repeat: no-repeat;
+  background-position: right top; }
+  header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center; }
+    header nav div {
+      display: flex;
+      padding-right: 50px;
+      margin-top: 35px; }
+      header nav div span {
+        font-size: 40px;
+        font-family: "Poppins";
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        color: #484848;
+        padding-top: 40px;
+        padding-left: 25px; }
+    header nav ul {
+      list-style-type: none;
+      display: flex;
+      flex-wrap: wrap; }
+      header nav ul li {
+        padding: 20px; }
+        header nav ul li a {
+          text-decoration: none;
+          color: white;
+          font-family: "Poppins", Medium;
+          text-transform: uppercase; }
+
+@media (max-width: 900px) {
+  header {
+    background-image: none;
+    height: auto; }
+    header nav {
+      display: block;
+      padding-left: 180px; }
+      header nav div {
+        padding-right: 0px;
+        margin-top: 0px;
+        margin-left: 25px; }
+      header nav ul {
+        flex-wrap: nowrap; }
+        header nav ul li a {
+          color: #6156F9; } }
+
+@media (max-width: 576px) {
+  header nav {
+    padding-left: 0px; }
+    header nav ul li {
+      padding: 15px; } }
+
+button, .buttonprice, .buttonprice--blue, .hero-banner button, main button, .flex .btnplacement button, .news button {
+  border: none;
+  background: linear-gradient(to right, #1a129f 66%, #6156F9 100%);
+  font-family: "Poppins", Medium;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer; }
+
+.buttonprice, .buttonprice--blue {
+  border: solid 1px #1000ff;
+  background: white;
+  font-weight: 500;
+  font-size: 16px;
+  color: #42495B;
+  padding: 14px 41px;
+  border-radius: 25px; }
+  .buttonprice--blue {
+    background: linear-gradient(to right, #1a129f 66%, #6156F9 100%);
+    color: white; }
+
+.rs {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 170px;
+  top: 450px;
+  align-items: center; }
+  .rs a {
+    padding-bottom: 43px; }
+  .rs hr {
+    width: 4px;
+    height: 32px;
+    background: linear-gradient(to right, #1a129f 66%, #6156F9 100%);
+    margin-top: -25px; }
+
+@media (max-width: 900px) {
+  .rs {
+    left: 50px;
+    top: 350px; } }
+
+@media (max-width: 576px) {
+  .rs {
+    left: 20px;
+    top: 350px; } }
+
+.mouse {
+  width: 80px;
+  height: 80px;
+  box-shadow: 0 10px 20px 0 rgba(126, 118, 249, 0.16);
+  border-radius: 60px;
+  display: block;
+  margin: 0 auto; }
+  .mouse img {
+    margin: 0 auto;
+    display: flex;
+    padding-top: 20px;
+    margin-top: 150px; }
+
+@media (max-width: 900px) {
+  .mouse img {
+    margin-top: 80px; } }
+
+@media (max-width: 576px) {
+  .mouse {
+    margin-bottom: 50px; } }
+
+.container {
+  width: 70%;
+  margin: 0 auto; }
+
+.hero-banner img {
+  position: absolute;
+  top: 150px;
+  right: 130px; }
+
+.hero-banner h2, .hero-banner main .weare h2, main .weare .hero-banner h2, .hero-banner article .space h2, article .space .hero-banner h2, .hero-banner .flex .fiche h2, .flex .fiche .hero-banner h2 {
+  margin-top: -25px;
+  font-size: 72px; }
+
+.hero-banner .buttonprice, .hero-banner .buttonprice--blue, .hero-banner button, .hero-banner .flex .btnplacement button, .flex .btnplacement .hero-banner button {
+  margin-top: 25px;
+  padding: 13px 40px;
+  border-radius: 30px;
+  font-size: 16px; }
+
+.hero-banner p {
+  text-transform: uppercase;
+  width: 350px; }
+
+@media (max-width: 900px) {
+  .hero-banner {
+    text-align: center; }
+    .hero-banner p {
+      width: auto; }
+    .hero-banner a {
+      display: none; } }
+
+@media (max-width: 576px) {
+  .hero-banner h2, .hero-banner main .weare h2, main .weare .hero-banner h2, .hero-banner article .space h2, article .space .hero-banner h2, .hero-banner .flex .fiche h2, .flex .fiche .hero-banner h2 {
+    margin-top: 0px;
+    font-size: 35px;
+    margin-bottom: 10px; } }
+
+main {
+  background-image: url(../../img/background-we-are.png);
+  height: 820px;
+  background-repeat: no-repeat;
+  background-position: right;
+  display: flex; }
+  main img {
+    margin-left: 100px;
+    margin-top: 140px;
+    float: left; }
+  main .weare {
+    margin: auto;
+    width: 533px;
+    height: 240px; }
+    main .weare h2, main .weare .flex .fiche h2, .flex .fiche main .weare h2 {
+      font-size: 50px;
+      font-weight: 600; }
+    main .weare .texteviolet, main .weare .card .bg-img .center .texteviolet, .card .bg-img .center main .weare .texteviolet, main .weare .news div:first-child .texteviolet, .news div:first-child main .weare .texteviolet {
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: 1.63;
+      font-size: 20px;
+      font-family: "Poppins"; }
+  main p:nth-child(3) {
+    margin-bottom: 20px;
+    padding: 5px; }
+  main .buttonprice, main .buttonprice--blue, main .hero-banner button, .hero-banner main button, main button, main .flex .btnplacement button, .flex .btnplacement main button, main .news button, .news main button {
+    padding: 15.4px 52px;
+    border-radius: 25px;
+    margin-top: 25px;
+    font-size: 12px; }
+
+@media (max-width: 900px) {
+  main {
+    display: block; } }
+
+@media (max-width: 576px) {
+  main {
+    height: auto; }
+    main img {
+      display: none; }
+    main .weare {
+      margin: auto;
+      width: auto;
+      height: 240px;
+      text-align: center; } }
+
+article {
+  background-image: url(../../img/background-service.png);
+  background-repeat: no-repeat;
+  display: flex;
+  background-position: bottom;
+  position: relative;
+  z-index: 1; }
+  article .space {
+    margin-top: 100px; }
+    article .space p {
+      font-size: 25px;
+      line-height: 1.2;
+      font-family: "Lato";
+      text-transform: uppercase; }
+    article .space h2, article .space .flex .fiche h2, .flex .fiche article .space h2 {
+      text-transform: none;
+      font-size: 50px;
+      margin-top: 8px;
+      margin-bottom: 91px; }
+  article .btnplacement button, article .btnplacement .buttonprice, article .btnplacement .buttonprice--blue, article .flex .btnplacement button, .flex article .btnplacement button {
+    margin-top: 50px; }
+
+@media (max-width: 900px) {
+  article .space {
+    margin-top: 400px; } }
+
+.flex {
+  display: flex; }
+  .flex .fiche {
+    margin-right: 80px;
+    margin-bottom: 111px;
+    padding: 21px 20px 27px 30px;
+    border-radius: 36px;
+    box-shadow: 0 10px 20px 0 rgba(126, 118, 249, 0.1);
+    background-color: white; }
+    .flex .fiche img {
+      display: block;
+      margin: auto;
+      margin-bottom: 37px; }
+    .flex .fiche h2 {
+      font-size: 16px;
+      margin-bottom: 37px; }
+  .flex .btnplacement .buttonprice, .flex .btnplacement .buttonprice--blue, .flex .btnplacement button {
+    padding: 6px 18.5px;
+    border-radius: 25px;
+    float: right; }
+
+@media (max-width: 900px) {
+  .flex {
+    display: grid; }
+    .flex .fiche {
+      margin-right: auto; } }
+
+.card .bg-img {
+  background-color: rgba(127, 118, 249, 0.15);
+  height: auto; }
+  .card .bg-img .center {
+    text-align: center; }
+    .card .bg-img .center .texteviolet {
+      font-family: "Poppins";
+      font-size: 20px;
+      padding-top: 91px; }
+    .card .bg-img .center h2 {
+      font-size: 50px;
+      font-weight: 600;
+      margin-top: 10px;
+      margin-bottom: 60px; }
+
+.card .fiche2 {
+  width: 370px;
+  height: 463px;
+  margin: 60px 0 0 75px;
+  padding: 57px 39.4px 52px 40.1px;
+  border-radius: 26px;
+  background-color: white;
+  margin-bottom: 90px; }
+  .card .fiche2 .titre2 {
+    margin-bottom: 69px; }
+  .card .fiche2 .textegris {
+    text-align: center; }
+  .card .fiche2 a {
+    text-decoration: none; }
+  .card .fiche2 .buttonprice, .card .fiche2 .buttonprice--blue {
+    display: block;
+    margin: 0 auto; }
+
+@media (max-width: 576px) {
+  .card .fiche2 {
+    width: auto;
+    margin: 0;
+    margin-bottom: 50px; }
+    .card .fiche2 .titre2 {
+      margin-bottom: 10px; } }
+
+.news div:first-child {
+  text-align: center; }
+  .news div:first-child .card .bg-img .center .texteviolet, .card .bg-img .center .news div:first-child .texteviolet, .news div:first-child .texteviolet {
+    font-family: "Poppins";
+    font-size: 20px;
+    margin-top: 135px;
+    margin-bottom: 10px; }
+  .news div:first-child span {
+    font-weight: 600; }
+
+.flexs {
+  justify-content: center;
+  margin-top: 43px;
+  display: flex; }
+  .flexs input {
+    padding: 18px 305px 17px 30px;
+    background-color: #f6f7fb;
+    border: none;
+    opacity: 0.6;
+    font-family: "Poppins";
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.5;
+    color: #999999;
+    margin-right: 26px; }
+
+.news {
+  padding-bottom: 50px; }
+  .news .buttonprice, .news .buttonprice--blue, .news .flex .btnplacement button, .flex .btnplacement .news button, .news button {
+    border-radius: 25px;
+    text-transform: none;
+    padding: 15px 45px 14px; }
+
+footer .backgroundfooter {
+  background-image: url(../../img/footer.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 566px; }
+
+footer .socialmediafooter {
+  display: flex; }
+  footer .socialmediafooter i {
+    padding-right: 40px;
+    color: white; }
+
+footer .footerpart {
+  display: flex;
+  justify-content: space-around; }
+  footer .footerpart section {
+    margin-top: 250px; }
+    footer .footerpart section .textefooter--small {
+      margin-top: 24px;
+      margin-bottom: 23px; }
+
+footer nav ul {
+  flex-direction: column;
+  display: flex;
+  list-style-type: none; }
+  footer nav ul li {
+    font-size: 16px;
+    padding-bottom: 15px; }
+    footer nav ul li a {
+      text-decoration: none;
+      color: white;
+      padding-right: 20px; }
+      footer nav ul li a i {
+        padding-right: 7px;
+        align-items: flex-start; }
+
+footer .flexfooter {
+  display: flex; }
+
+@media (max-width: 900px) {
+  footer .backgroundfooter {
+    background-color: #1A129F;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto; }
+  footer nav ul li {
+    padding-bottom: 16px; }
+  footer .footerpart {
+    display: grid;
+    justify-content: space-around; }
+    footer .footerpart section {
+      margin-top: 100px; }
+      footer .footerpart section .textefooter--small {
+        margin-top: 24px;
+        margin-bottom: 23px; }
+  footer .flexfooter {
+    display: grid; } }
+
+@media (max-width: 576px) {
+  .flexs {
+    display: block; }
+    .flexs input {
+      padding: 9px 152px 8px 15px;
+      display: block;
+      margin: auto; }
+  footer button, footer .buttonprice, footer .buttonprice--blue, footer .hero-banner button, .hero-banner footer button, footer .flex .btnplacement button, .flex .btnplacement footer button, footer .news button, .news footer button {
+    display: block;
+    margin: auto;
+    margin-top: 20px; } }

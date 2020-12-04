@@ -1,0 +1,69 @@
+.card {
+    .bg-img {
+        background-color: $bgtxtviolet;
+        height: auto;
+
+        .center {
+            text-align: center;
+
+            .texteviolet {
+                @extend .texteviolet;
+                font-family: $poppins;
+                font-size: $ftsize20;
+                padding-top: 91px;
+            }
+
+            h2 {
+                font-size: $ftsize50;
+                font-weight: $fontw600;
+                margin-top: 10px;
+                margin-bottom: 60px;
+            }
+        }
+    }
+
+    .fiche2 {
+        width: 370px;
+        height: 463px;
+        margin: 60px 0 0 75px;
+        padding: 57px 39.4px 52px 40.1px;
+        border-radius: 26px;
+        background-color: $colorwhite;
+        margin-bottom: 90px;
+
+        .titre2 {
+            margin-bottom: 69px;
+
+        }
+
+        .textegris {
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .buttonprice {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
+
+//RESPONSIVE
+
+@media(max-width: 576px) {
+    .card {
+        .fiche2 {
+            width: auto;
+            margin: 0;
+            margin-bottom: 50px;
+
+            .titre2 {
+                margin-bottom: 10px;
+
+            }
+        }
+    }
+}

@@ -1,0 +1,104 @@
+header {
+    background-image: url(../../img/wave.svg);
+    height: 770px;
+    background-repeat: no-repeat;
+    background-position: right top;
+
+
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+
+        div {
+            display: flex;
+            padding-right: 50px;
+            margin-top: $margintop35;
+
+
+            span {
+                font-size: $ftsize40;
+                font-family: $poppins;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                color: $colorlogo;
+                padding-top: 40px;
+                padding-left: 25px;
+
+            }
+        }
+
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+
+            li {
+                padding: 20px;
+
+                a {
+                    text-decoration: none;
+                    color: $colorwhite;
+                    font-family: $poppins, Medium;
+                    @include text-transform();
+
+
+                }
+            }
+        }
+
+    }
+
+}
+
+//RESPONSIVE
+
+@media(max-width: 900px) {
+    header {
+        background-image: none;
+        height: auto;
+
+        nav {
+            display: block;
+            padding-left: 180px;
+
+            div {
+                padding-right: 0px;
+                margin-top: 0px;
+                margin-left: 25px;
+
+            }
+
+            ul {
+                flex-wrap: nowrap;
+
+                li {
+                    a {
+                        color: $colorblue;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media(max-width: 576px) {
+    header {
+        nav {
+            padding-left: 0px;
+
+            ul {
+
+                li {
+                    padding: $padding15;
+
+                }
+            }
+        }
+    }
+}

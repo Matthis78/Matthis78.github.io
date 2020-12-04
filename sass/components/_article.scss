@@ -1,0 +1,45 @@
+article {
+    background-image: url(../../img/background-service.png);
+    background-repeat: no-repeat;
+    display: flex;
+    background-position: bottom;
+    position: relative;
+    z-index: 1;
+
+    .space {
+        margin-top: 100px;
+
+        p {
+            font-size: $ftsize25;
+            line-height: 1.2;
+            font-family: $lato;
+            @include text-transform();
+        }
+
+        h2 {
+            @extend h2;
+            text-transform: none;
+            font-size: $ftsize50;
+            margin-top: 8px;
+            margin-bottom: 91px;
+        }
+    }
+
+    .btnplacement {
+        button {
+            margin-top: 50px;
+        }
+    }
+}
+
+//RESPONSIVE
+
+
+@media(max-width: 900px) {
+    article {
+        .space {
+            margin-top: 400px;
+        }
+
+    }
+}

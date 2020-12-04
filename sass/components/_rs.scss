@@ -1,0 +1,33 @@
+.rs {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 170px;
+    top: 450px;
+    align-items: center;
+
+    a {
+        padding-bottom: 43px;
+    }
+
+    hr {
+        width: 4px;
+        height: 32px;
+        background: $bgbtn;
+        margin-top: -25px;
+    }
+}
+
+@media(max-width: 900px) {
+    .rs {
+        left: 50px;
+        top: 350px;
+    }
+}
+
+@media(max-width: 576px) {
+    .rs {
+        left: 20px;
+        top: 350px;
+    }
+}

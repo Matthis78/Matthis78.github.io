@@ -1,0 +1,53 @@
+.hero-banner {
+    img {
+        position: absolute;
+        top: 150px;
+        right: 130px;
+    }
+
+    h2 {
+        @extend h2;
+        margin-top: -25px;
+        font-size: $fontsize72;
+    }
+
+    button {
+        @extend button;
+        margin-top: $margintop25;
+        padding: $paddingbtn;
+        border-radius: $borderradus30;
+        font-size: $ftsize16;
+    }
+
+    p {
+        @include text-transform();
+        width: 350px;
+    }
+}
+
+//RESPONSIVE
+
+
+@media(max-width: 900px) {
+    .hero-banner {
+        p {
+            width: auto;
+        }
+
+        text-align: center;
+
+        a {
+            display: none;
+        }
+    }
+}
+
+@media(max-width: 576px) {
+    .hero-banner {
+        h2 {
+            margin-top: 0px;
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+    }
+}

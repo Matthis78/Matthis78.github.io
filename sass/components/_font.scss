@@ -1,0 +1,106 @@
+@mixin text-transform {
+    text-transform: uppercase;
+}
+
+h1 {
+    font-family: $poppins;
+    font-size: $ftsize50;
+    font-weight: normal;
+    color: $colortitre;
+    line-height: 1.6;
+    letter-spacing: normal;
+    margin-top: 150px;
+    @include text-transform();
+
+}
+
+h2 {
+    font-family: $poppins;
+    color: $colortitre2;
+    @include text-transform();
+}
+
+.textegris {
+    color: $colorp;
+    font-size: $ftsize16;
+    font-family: $poppins;
+    font-weight: $fontw300;
+}
+
+.textelato {
+    color: $colorp;
+    font-family: $lato;
+    font-weight: normal;
+    font-size: $ftsize15;
+}
+
+.texteviolet {
+    color: $txtviolet;
+    font-weight: normal;
+}
+
+.textefooter {
+    color: $colorwhite;
+    font-weight: $fontw300;
+    font-family: $poppins;
+    font-size: $ftsize50;
+
+    &--small {
+        @extend .textefooter;
+        font-size: 31px;
+        font-weight: $fontw500;
+    }
+}
+
+.titre2 {
+    color: $colortitre2;
+    font-size: $ftsize28;
+    font-weight: normal;
+    line-height: 1.32;
+    letter-spacing: normal;
+    text-align: center;
+    font-family: $poppins;
+}
+
+.titlefooter {
+    font-family: $poppins;
+    font-size: $ftsize20;
+    font-weight: $fontw500;
+    line-height: 1.5;
+}
+
+.price {
+    font-family: $poppins;
+    font-size: $ftsize30;
+    font-weight: $fontw600;
+    line-height: 1.53;
+    text-align: center;
+    color: $colorprice;
+    margin-top: 36px;
+    margin-bottom: 40px;
+}
+
+h3 {
+    font-family: $poppins;
+    font-size: $ftsize32;
+    line-height: 1.5;
+    text-align: center;
+    color: $colortitre2;
+    font-weight: normal;
+}
+
+//RESPONSIVE
+
+
+@media(max-width: 900px) {
+    h1 {
+        margin-top: 10px;
+    }
+}
+
+@media(max-width: 576px) {
+    h1 {
+        font-size: $ftsize38;
+    }
+
+}

@@ -1,0 +1,48 @@
+.flex {
+    display: flex;
+
+    .fiche {
+        margin-right: 80px;
+        margin-bottom: 111px;
+        padding: 21px 20px 27px 30px;
+        border-radius: 36px;
+        box-shadow: 0 10px 20px 0 rgba(126, 118, 249, 0.1);
+        background-color: white;
+
+        img {
+            display: block;
+            margin: auto;
+            margin-bottom: 37px;
+        }
+
+        h2 {
+            @extend h2;
+            font-size: $ftsize16;
+            margin-bottom: 37px;
+        }
+
+    }
+
+    .btnplacement {
+
+        button {
+            @extend button;
+            padding: 6px 18.5px;
+            border-radius: $borderradus25;
+            float: right;
+
+        }
+    }
+
+}
+
+@media(max-width: 900px) {
+    .flex {
+        display: grid;
+
+        .fiche {
+            margin-right: auto;
+
+        }
+    }
+}
